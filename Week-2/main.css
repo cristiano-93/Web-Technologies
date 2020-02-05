@@ -1,38 +1,42 @@
-  
 * {
     margin: 0;
-    border: 0
+    padding: 0;
 }
 
 body {
- font-family: 'Zhi Mang Xing', cursive;
+    font-family: 'Short Stack', cursive;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: firebrick;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
-    letter-spacing: 12px
-
 }
 
-#header {
-    background-color: aqua;
+#content {
+    padding: 3%;
 }
 
-.section {
-  background: linear-gradient(red, blue)  
+nav {
+    background-color: #B22A0C;
 }
 
-#section1 {
-
-    background-color: azure;
+nav ul {
+    width: 115px;
+    margin-left: 30%;
+    margin: 0 auto;
 }
 
-#block {
-    display: block;
+nav ul li {
+    display: inline;
 }
 
-#section2 {
-
-    background-color: red;
+section {
+    border: 2px solid red;
+    padding: 3%;
+    width: 26%;
+    float: left;
 }
