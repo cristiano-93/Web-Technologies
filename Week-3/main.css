@@ -19,8 +19,9 @@ h6 {
 #content {
     padding: 3%;
 }
-.small {
-    color: ;
+
+.important {
+    color: red;
 }
 
 nav {
@@ -43,19 +44,39 @@ section {
     width: 26%;
     float: left;
 }
-.small {
-    color: rgb(70, 116, 1);
-}
-@media (max-width : 320px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Large Devices, Wide Screens */
+@media (max-width : 1200px) {
 
 }
 
-/* Extra Small Devices, Phones */ 
-@media (max-width : 480px) {
-    h1 {
-        font-size: 15px !important;
+/* Medium Devices, Desktops */
+@media (max-width : 992px) {
+    
+    body {
+        background-color: green;
     }
+    
+    h1 {
+            font-size: 30px;
+        }
 
+        .second-section, .third-section {
+            width: 40%;
+            float: left;
+        }
 }
 
 /* Small Devices, Tablets */
@@ -63,38 +84,26 @@ section {
     #optional-heading {
         display: none;
     }
+
     section {
         width: 95%;
         float: none;
         margin-top: 2%;
     }
-    {
-        font-size: 20px;
-    }
 }
 
-/* Medium Devices, Desktops */
-@media (max-width : 992px) {
-    body {
-        background-color: greenyellow;
-    }
 
+/* Extra Small Devices, Phones */ 
+@media (max-width : 480px) {
     h1 {
-        font-size: 30px;
+        font-size: 15px !important; 
     }
-    .first {
-        width: 95%;
+    section p {
+        font-size: 10px;    
     }
-    .second, .third {
-        width: 40%;
-        float: left;
-    }
-
 }
 
-/* Large Devices, Wide Screens */
-@media (max-width : 1200px) {
 
-}
+
 
 /** by default everything else is larger than 1200px **/
