@@ -4,49 +4,57 @@
         <title>HTML - Form </title>
         <meta charset="utf-8">
         <meta name="description" content="Session 8 form task">
+        <style>
+            label {
+    min-width: 186px;
+    display: inline-block;
+}
+        </style>
     </head>
     <body>
         <!-- This is a large un-styled form -->
         <h1> Travel Survey</h1>
-        <form>
+        <form action="#" id="survey" method="POST">
         
         <!-- Personal Information  -->
-
-            <label> First Name(*): </label> <input type="text" name="first_name">
-            <label> Last Name(*):   </label> <input type="text" name="last_name">
+        <p class="client">
+            <p><label> First Name(*): </label> <input type="text" name="first_name"></p>
+            <p><label> Last Name(*):   </label> <input type="text" name="last_name"></p>
             
         <!-- Contact Information -->   
-            
-            <label> Address Line 1(*): </label> <input type="text" name="address_1" required>
-            <label>Post Code(*) </label> <input type="text" name="post_code">
-            <label>Phone Number1(*) </label> <input type="text" name="phone1">
-            <label>Phone Number2</label><input type="text" name="phone2">
-            <label> Email(*): </label> <input type="text" name="address_1">
-            
+            <p>&nbsp;</p>
+            <p><label> Address Line 1(*): </label> <input type="text" name="address_1" required></p>
+            <p><label>Post Code(*) </label> <input type="text" name="post_code"></p>
+            <p><label>Phone Number1(*) </label> <input type="text" name="phone1"></p>
+            <p><label>Phone Number2</label><input type="text" name="phone2"></p>
+            <p><label> Email(*): </label> <input type="text" name="address_1"></p>
+        
         <!-- Travel  Information --> 
-            
-            <label> How do you normally travel to university?</label>
+        <p class="travel">
+            <p>&nbsp;</p>
+            <p><label> How do you normally travel to university?</label>
             
             <input type="radio" name="tasport_method" value="drive"> Drive
             <input type="radio" name="tasport_method" value="public"> Public transport
-            <input type="radio" name="tasport_method" value="public"> Walk
-            
-            <label> How long does it take you to travel in? </label>
+            <input type="radio" name="tasport_method" value="public"> Walk</p>
+            <p></p>
+            <p><label> How long does it take you to travel in? </label>
             <select name="travel_time">
                 <option value="10">0 - 10 mins</option>
                 <option value="20">10 - 20 mins</option>
                 <option value="30">20 - 30 mins</option>
                 <option value="30+">30 mins +</option>
             </select>
-            
+        </p>
         <!--  Declaration  -->     
-            
+            <p></p>
             <label> Are you happy for us to email you</label>
                 <input type="radio" name="yes" value="yes"> Yes
                 <input type="radio" name="no" value="no">No
-        
+        <p class="submit">
         <!-- Submit button -->            
-            <input type="submit">    
+            <input type="submit">
+        </p>    
         </form>
     </body>
 </html>
