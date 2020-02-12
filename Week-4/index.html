@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles.css">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <!--  name=Cristiano+Santos&email=cristiano_santos93%40hotmail.com&date=2020-01-29  -->
+
+    <h1>Student Survey</h1>
+
+    <form action="#" id="survey" method="POST">
+
+        <!--Contact Info-->
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <p> <label for="name">Name*</label> <input type="text" id="name" name="name" placeholder="enter name"
+                    required></p>
+            <p> <label for="email">Email*</label> <input type="text" id="email" name="email" placeholder="enter email"
+                    required></p>
+            <p> <label for="number">Number*</label> <input type="tel" name="number" id="number" required> </p>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Survey Information</legend>
+            <p>
+                <label for="year"> What year are you in?</label>
+                <select id="year" name="year">
+                    <option value=""> Select year</option>
+                    <option value="1">Year 1</option>
+                    <option value="2">Year 2</option>
+                    <option value="3">Year 3</option>
+                    <option value="4">Year 4</option>
+                </select>
+            </p>
+    
+            <label for="electronic_device"> Which Electronic devices do you use? </label>
+            <p><input id="electronic_device" type="checkbox" name="electronic_device" value="computer"> Computer </p>
+            <p><input type="checkbox" name="electronic_device" value="Ebook"> Ebook reader</p>
+            <p><input type="checkbox" name="electronic_device" value="phone"> Smarthphone </p>
+    
+            <label for="radio"> How many hours do you spend a day using electronic devices </label>
+            <p><input id="radio" type="radio" name="rating" value="1"> 1</p>
+            <p> <input type="radio" name="rating" value="2"> 2 </p>
+            <p><input type="radio" name="rating" value="3+"> 3+ </p>
+    
+            <p>
+                <label for="suggestions"> Any other comments? </label>
+            </p>
+    
+            <p>
+                <textarea id="suggestions" name="suggestions" rows="5" cols="25">
+    
+                </textarea></p>
+
+            <p> <input type="submit" id="submit" value="submit"> </p>
+        </fieldset>
+
+
+
+
+        
+
+        
+
+
+
+    </form>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+}
+
+#survey {
+    width: 280px;
+    margin: auto;
+}
+
+#survey fieldset legend {
+
+    text-align: center;
+    color: deepskyblue;
+    font-size: 22px;
+    text-decoration: underline;
+}
+#survey input[type="text"] {
+    float: right;
+}
+#survey input[type="submit"] {
+    border: 2px solid green;
+    margin-left: 29%;
+}
