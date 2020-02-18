@@ -1,0 +1,30 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+nav {
+    width: 200px;
+    margin: 0 auto;
+} 
+
+nav ul li {
+    display: inline;
+}
+
+section {
+    width: 27%;
+    border: 1px solid red;
+    padding: 0% 3% 0% 3%;
+    float: left;
+}
+
+@media(max-width: 605px) {
+    section {
+        width: 100%;
+        background-color: blue;
+    }
+}
