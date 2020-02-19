@@ -22,7 +22,7 @@ section {
     float: left;
 }
 
-@media(max-width: 605px) {
+@media(max-width: 605 px) {
     section {
         width: 100%;
         background-color: blue;
