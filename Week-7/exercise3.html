@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3 Week 7</title>
+
+    <script>
+        function calculateNumber(){
+            var number1 =  parseInt(document.getElementById("number1").value);
+            var number2 =  parseInt(document.getElementById("number2").value);
+            var number3 =  parseInt(document.getElementById("number3").value);
+            var result =  number1 + number2 + number3;
+            document.getElementById("result").innerHTML = "Result: "+ result;
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+    <p id="result">
+
+    </p>
+
+    <p><input type="number" placeholder="enter first number" id="number1"></p>
+    <p><input type="number" placeholder="enter second number" id="number2"></p>
+    <p><input type="number" placeholder="enter third number" id="number3"></p>
+    <p> <button onClick="calculateNumber()">Click Me</button> </p>
+
+    
+
+
+    
+
+</body>
+</html>
