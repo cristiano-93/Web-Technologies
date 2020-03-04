@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div id="chatStream">
-        <p>Joe: Hello everyone</p>
-    </div>
-    <p><input type="text" id="nameInput" placeholder="name" value="joe"></p>
-    <p><textarea name="#" id="messageInput" cols="30" rows="10"> Hello World</textarea> </p>
-    <button onclick="handleClick()">Send Message</button>
+       <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <!-- Latest compiled and minified JavaScript -->
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCu7Hiv_PmEeFflgXuAlAApwass6hXlheE",
-    authDomain: "web-tech-b2ffc.firebaseapp.com",
-    databaseURL: "https://web-tech-b2ffc.firebaseio.com",
-    projectId: "web-tech-b2ffc",
-    storageBucket: "web-tech-b2ffc.appspot.com",
-    messagingSenderId: "420379071709",
-    appId: "1:420379071709:web:bd68db1c79b3957a643734",
-    measurementId: "G-75S596YR2V"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-  var db = firebase.firestore();
-  debugger
-</script>
-
+    <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+    
+    <!---
+      Firebase config
+    -->
 
     <script>
-        //log name and message to the console
-        function handleClick(){
-            var name = document.getElementById("nameInput").value
-            var message = document.getElementById("messageInput").value;
-            db.collection("messages").add({
-                message: message,
-                name: name,
-                time: Date()
-            })
-            var chat = name + ": " + message;
-            document.getElementById("result").innerHTML = chat;
-        }
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyCu7Hiv_PmEeFflgXuAlAApwass6hXlheE",
+          authDomain: "web-tech-b2ffc.firebaseapp.com",
+          databaseURL: "https://web-tech-b2ffc.firebaseio.com",
+          projectId: "web-tech-b2ffc",
+          storageBucket: "web-tech-b2ffc.appspot.com",
+          messagingSenderId: "420379071709",
+          appId: "1:420379071709:web:bd68db1c79b3957a643734",
+          measurementId: "G-75S596YR2V"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        
+      </script>
+    <script src="main.js" ></script>
 
-
-    </script>
-
-    <p id="result">chat here</p>
+    <title>A Sample FireBase Application</title>
+     
+</head>
+<body>
+   
+   <div class="container">
+       
+            <div class="col-md-12">
+                <h1 class="text-center"> A Sample Chat Application </h1>
+                
+            </div>
+            <!-- /.col-md-12 -->  
+          
+            <div class="col-md-12">
+               <div class="well" id="messages">Basic Well</div>
+           </div>
+           <!-- /.col-md-12 -->  
+           
+           <div class="col-md-12 form-group">
+               
+               <textarea class="form-control" rows="5" id="comment"></textarea>
+               <!-- /.col-md-9 -->
+           </div>
+           <!-- /.col-md-12 -->
+           
+           <button type="button" onClick="sendMessage()" class="btn btn-primary btn-block">Send Message</button>
+       
+   </div>
+    
+    
 </body>
 </html>
