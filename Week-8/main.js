@@ -16,7 +16,7 @@ function handleKeyDown(e) {
             tweetInput.value = ""; 
             //debugger; 
             for (var i = 0; i < tweets.length ; i++ ) {
-                tweetOutput +=  tweets[i];
+                tweetOutput += "<p>"+tweets[i]+ "</p>";
             }
             document.getElementById('tweetOutput').innerHTML = tweetOutput;
         }
