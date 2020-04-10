@@ -59,12 +59,15 @@ while run :
             
     elif(choice == 2):
         print('choose 2')
+        print('this option is not yet working')
     
     elif(choice == 3):
         print('choose 3')
+        print('this option is not yet working')
     
     elif(choice == 4):
         print('choose 4')
+        print('this option is not yet working')
     
     elif(choice == 5):
         print('you choose to exit')
