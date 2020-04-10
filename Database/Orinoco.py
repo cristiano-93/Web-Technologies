@@ -1,20 +1,22 @@
 import sqlite3
 #importing and implementing SQLite3 into the programm
 
-
 db = sqlite3.connect('C:/Users/Cristiano/assessment.db')
 cursor = db.cursor()
 
-
+#setting up some variables to use 
 choice = 0
 shopperId = ''
 run = True
+
+#first page to select the shopper ID
 welcome = '    Welcome to the ORINOCO customer database    '
 print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n') # using this line to clear the terminal window
 print(welcome.center(100,'-'))
 print('\n')
 customer_id = input('Input customer ID: ')
 
+#Menu
 while run :
     print('ORINOCO - SHOPPER MAIN MENU')
     print('___________________________\n')
