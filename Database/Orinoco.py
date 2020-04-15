@@ -56,7 +56,8 @@ while run :
             quantity = output[5]
             ordered_product_status = output[6]
             
-            print('{0}\t\t{1:10}\t{2:100}\t{3:17}\t{4:8}\t{5:3}\t{6:10}\n'.format(order_id, order_date, product_description, seller_name, price, quantity, ordered_product_status))
+            print('{0}\t\t{1:10}\t{2:100}\t{3:17}\t{4:8}\t{5:3}\t{6:10}\n'
+                .format(order_id, order_date, product_description, seller_name, price, quantity, ordered_product_status))
         print('\n\n')
             
     elif(choice == 2):

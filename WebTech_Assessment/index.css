@@ -1,0 +1,56 @@
+body {
+    font-family:'Times New Roman', Times, serif ;
+    background-color: lightgray;
+}
+#title {
+    font-size: 30px;
+    text-align: center;
+    color: blueviolet;
+}
+#web_desc {
+    text-align: center;
+    color: darkblue;
+}
+
+
+#options_title {
+    border: 2px solid blue;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+section {
+    
+    text-align: center;
+    font-size: 18px;
+    width: 30%;
+    height: 120px;
+    float: left;
+    border: 2px solid limegreen;
+    margin: 10px;
+    
+}
+h1,h2,h3 {
+    font-size:25px ;
+}
+h4 {
+    width: 20%;
+    float: left;
+    margin: auto;
+    text-align: center;
+    border: 2px solid red;
+}
+
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+
+    section {
+        width: 95%;
+        float: none;
+        margin-top: 2%;
+    }
+}
+/*changes to be made:
+    change font size in break
+    remove the #suggest border
