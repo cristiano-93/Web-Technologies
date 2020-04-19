@@ -2,6 +2,7 @@ body {
     font-family:'Times New Roman', Times, serif ;
     background-color: lightgray;
     font-size: 18px;
+
 }
 #title {
     height: 80px;
@@ -23,7 +24,7 @@ body {
 
 }
 
-#options_title {
+#options {
     border: 2px solid blue;
     text-align: center;
     width: 25%;
