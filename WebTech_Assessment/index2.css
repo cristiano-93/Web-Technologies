@@ -63,7 +63,7 @@ section {
 
 
 
-/* Small Devices, Tablets */
+/* Small Devices, Tablets
 @media (max-width : 800px) {
 
     #thumbnails {
@@ -76,4 +76,4 @@ section {
         border: 2px solid violet;
     }
     
-}
+} */
