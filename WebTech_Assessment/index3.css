@@ -6,23 +6,41 @@ h1, h2, h3, h4 {
     text-align: center;
     font-size: 25px;
 }
-h4 {
-    border: 2px solid green;
+/* section {
+    border: 2px solid red;
+    padding: 1%;
     width: 200px;
-    padding: 10px;
-    height: 20px;
-    float: left;
+    height: 100px;
+    margin: 2% 5% 3% ;
+   
     
+    
+} */
+#thumb1 {
+    display: flex;
+    border: 2px solid red;
+    padding: 1%;
+    width: 700px;
+    height: 100px;
+    margin: 2% 5% 3% ;
+}
+#h1 {
+    
+    margin: 2%;
+    border: 2px solid blue;
+    
+}
+#improve_desc {
+    border: 2px solid green;
 }
 
 
-section {
-    border: 2px solid blue;
-    padding: 3%;
-    width: 20%;
-    height: 100px;
-    margin: 2%;
-    float: left;
+h4 {
+    border: 2px solid green;
+    width: 200px;
+    padding: 1%;
+    height: 20px;
+    margin: 5% auto;
     
     
 }
