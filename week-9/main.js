@@ -18,7 +18,7 @@ function handleChange(e) {
         }
     }
 
-    for
+    
 
 
     console.log('changed')
